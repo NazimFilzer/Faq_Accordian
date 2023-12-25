@@ -68,6 +68,10 @@ summary {
   list-style: none;
 }
 
+summary:hover {
+  color: #AD28EB
+}
+
 details p {
   margin-top: 0.9em;
   font-weight: 400;
