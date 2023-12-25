@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url('./assets/images/background-pattern-desktop.svg');
+  background-repeat: repeat-x;
+  background-size: auto;
+  background-position: top;
+  background-color: hsl(275, 100%, 97%);
+}
+
+body {
+
+  font-family: 'Work Sans', sans-serif;
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0 10px 50px hsla(0, 0%, 0%, 0.33);
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px 25px;
+}
+
+.heading {
+  display: flex;
+  margin-bottom: 1.25em;
+}
+
+.heading h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-left: .5em;
+}
+
+.heading img {
+  width: 20px;
+}
+
+hr {
+  border: 0.1px solid rgb(221, 221, 221);
+  margin: 20px 0;
+  border-radius: 70px;
+}
+
+details {
+  margin-bottom: 20px;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+details p {
+  margin-top: 0.9em;
+  font-weight: 400;
+  font-size: .9rem;
+  color: hsl(0, 0%, 52%);
+  margin-bottom: 10px;
+}
+
+details[open] summary~* {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
